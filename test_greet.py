@@ -10,6 +10,9 @@ class TestGreet(unittest.TestCase):
     def test_greet_with_another_name(self):
         self.assertEqual(greet("Bob"), "Hello, Bob!")
 
+    def test_greet_with_empty_name(self):
+        self.assertEqual(greet(""), "Hello, stranger!")
+
 
 if __name__ == "__main__":
     unittest.main()
